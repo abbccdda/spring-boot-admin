@@ -1,0 +1,8 @@
+install:
+  # - nvm install 4
+  # - nvm use 4
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+test_script:
+  - mvn clean verify
+build: off
